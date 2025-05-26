@@ -1,0 +1,26 @@
+运行方法，config.py中修改目标文件夹，在当前文件夹右键-》在终端打开 输入：
+    python get_eigenval.py
+    python get_kpoint.py
+
+syml_to_kpoints.py中的函数为将syml转为kpoints
+
+config.py 配置用户数据，以及目标文件夹
+
+get_eigenval.py 用于处理
+    eigenval中第6行中间的数字-ibzkpt 第2行的数字(a)
+    后续删除a块，每块如（
+    0.4000000E+00  0.0000000E+00  0.1000000E+00  0.0000000E+00
+        1      -15.295202   1.000000
+        ...
+    ）
+    : eigenval-化合物的bandgap
+    : ibzkpt-化合物
+
+get_kpoint.py 用于处理
+    syml运行python得到kpoints
+    复制4行-end的到ibzkpt中
+    ibzkpt第2行中的数字+kpoints第2行的数据替换ibzkpt中的数字
+    rm kpoint
+    rename ibzkpt kpint
+    ：syml-化合物的bandgap
+    :  ibzkpt-化合物的bandgap

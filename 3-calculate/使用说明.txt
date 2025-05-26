@@ -1,0 +1,14 @@
+打开main.ps1，修改$REMOTE_BASE_PATH = "/home/customer/Desktop/yxx/test"的目录为化合物的目录，双击运行
+
+
+1、下载autoit 3.3.14.0版本的autoit.zip解压复制其中Extras中的Au3Record到安装目录下的对应Extras文件夹中
+2、打开au3record，启动记录需要点击的位置
+3、对calculate_one.au3中标记了需要修改鼠标点击位置的地方修改
+4、设置->系统->屏幕->缩放 查看缩放比例，替换calculate_one.au3中对应的地方。例如125%脚本中就写为1.25
+5、删除workbook,新建workbook,对workbook的全屏按钮中间的方框截图，替换up_win.png，点击test_imgsearch进行测试，看能否移动到正确位置
+6、删除workbook,新建workbook,点击全屏，在通过au3record修改x1y1的值后，测试一个合适的cell间距
+7、将微信的alt+a快捷键修改为alt+shilft+a
+8、点击calculate_one.au3运行，查看一整套流程哪里有问题，在修改
+9、保证输入法为英文输入状态
+10、通过保证orgin已经打开，并且已经新建了一个workbook.那一栏只有一个新建的workbook
+11、保证orgin版本为orginpro2021 x64

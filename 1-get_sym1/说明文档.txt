@@ -1,0 +1,44 @@
+internal ip:tailscale,账号yx12138@aliyun.com
+    ubuntu(yxx):100.98.26.25
+    win11(yxx):100.88.83.69
+    win7(yxx):100.126.1.35
+    win11(jz):100.126.11.59
+运行环境：ubuntu
+
+clash for linux:
+    开启代理：
+        cd clash-for-linux
+        sudo bash start.sh
+        source /etc/profile.d/clash.sh
+        proxy_on
+    关闭代理：
+        cd clash-for-linux
+        sudo bash shutdown.sh
+        source /etc/profile.d/clash.sh
+        proxy_off
+
+tailscale:
+    开启服务：
+        sudo systemctl start tailscaled
+        sudo tailscale up
+    关闭服务：
+        sudo tailscale down
+        sudo systemctl stop tailscaled
+
+vim:
+    :1,5> #缩进指定行
+    esc v 选择行 > #>缩进 <反向缩进
+    esc v 选择行 :norm I#  #多行注释
+    esc v 选择行 :norm ^x  #取消多行注释
+
+1.修改配置文件：选择在工作室的网络还是非工作室的网络，非工作室下载过程较慢
+2.双击source.csv修改，将需要操作的行从222.xlsx文件复制过来
+3.确保ubuntu中关闭Xcrysden与文本查看器
+4.全屏vmware,就正常最大化窗口就行
+5.2024-0807文件夹下打开终端：python code/get_syml.py
+6.等待打开到可以选点的窗口，期间不要切换到其他界面，包括不可以切换vmware到其他软件
+7.点好后，点击窗口左上角旁边的finish按钮，等待几秒会打开自动识别的syml文件，人工确认（修改后ctrl+s保存，不修改不用操作），
+  点击之前finish按钮位置处的close按钮，会自动关闭相关窗口，然后打开第2个化合物进行操作
+8.全部操作完成后在tmp文件夹下，将操作完成的文件夹复制到需要的位置(tmp下文件夹后没有*的表示为操作完成了的)
+9.中途关闭：在运行脚本的窗口ctrl+c,关闭后需要记得将操作完成的文件夹复制到指定位置，下次运行会清空tmp重新下载
+10.在人共操作工程中，不要对窗口进行移动等操作，只进行选点操作
