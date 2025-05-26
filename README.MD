@@ -1,10 +1,17 @@
 整个流程：
+
 1.拖拽整个文件夹到ubuntu(包含这三个文件夹的文件夹)桌面，同时win11桌面也复制一份
+
 2.在ubuntu中打开1-get_syml,修改source.csv，在1-get_syml处打开终端，python code/get_syml.py 启动
+
 3.人工选点点击，将所有点都完成
+
 4.在ubuntu中打开2-get_kpoint-and-get_eigenval文件夹，此处打开终端，python run.py 键入1，回车启动
+
 5.第4步运行完成后，检查服务器中是否存在对应的东西，然后人工投任务
+
 6.在ubuntu或win11打开2-get_kpoint-and-get_eigenval文件夹，此处打开终端，python run.py 键入2，回车启动
+
 7.任务计算完成后回到win11中的桌面的文件夹中进入calculate文件夹，双击main.ps1运行
 
 ***在执行get_syml.py中，如果中途发生错误，
