@@ -24,6 +24,7 @@
     运行环境：ubuntu
     运行方法：打开终端进入1-get_syml, python code/get_syml.py
     详细见：1-get_syml下的 *说明文档.txt*
+```
 
 2-get_kpoint-and-get_eigenval
 
@@ -31,6 +32,7 @@
     运行环境：win11或者ubuntu
     运行方法：打开终端进入1-get_syml，python run.py
     详细见：2-get_kpoint-and-get_eigenval下的 *说明文档.txt*
+```
 
 3-calculate
 
@@ -38,6 +40,7 @@
     运行环境：win11
     运行方法：打开orgin(全屏)，双击main.ps1
     详细见：3-calculate下的 *使用说明.txt*
+```
 
 
 internal ip:tailscale,账号yx12138@aliyun.com
@@ -48,3 +51,4 @@ internal ip:tailscale,账号yx12138@aliyun.com
     win7(yxx):100.126.1.35
     win11(jz):100.126.11.59
     linux 192.168.159.43
+```
